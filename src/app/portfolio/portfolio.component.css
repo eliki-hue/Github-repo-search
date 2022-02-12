@@ -7,7 +7,7 @@
     background-color: rgb(153, 141, 204);
     -webkit-box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
-box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
+box-shadow: 8px 10px 16px 0px rgba(0,0,0,0.75);
     
 
 }
@@ -16,4 +16,10 @@ box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
 }
 .searchBy{
     margin: 20px;
+}
+#inputted{
+    -webkit-box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
+box-shadow: -5px 5px 10px 0px rgba(65, 42, 170, 0.75);
+    
 }
