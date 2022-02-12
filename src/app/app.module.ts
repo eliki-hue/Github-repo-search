@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
