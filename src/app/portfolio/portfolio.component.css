@@ -1,1 +1,19 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+
+.checker-container {
+    margin: 20px;
+    font-size: larger;
+    font-weight:700;
+    background-color: rgb(153, 141, 204);
+    -webkit-box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
+box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
+    
+
+}
+.checker-container *{
+    margin: 10px;
+}
+.searchBy{
+    margin: 20px;
+}
