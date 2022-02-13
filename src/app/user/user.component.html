@@ -19,9 +19,17 @@
                 <input type="text" name="inputted" id="inputted" placeholder="search..."><br>
                 <button type="submit" (click)="getUser()">submit</button>
             </div>
-           <div class="respose-section" *ngFor="">
-               <div class="response-name"> response-name here</div>
-               <div class="response-description"> response-description here</div>
+           <div class="respose-section" *ngFor="let record of user">
+              
+               <div class="response-name"> 
+                <ul >
+                    <li><strong>{{record.name}}</strong>  --<span style="font-weight: 400;">{{record.description}}</span>
+                   </li>
+               </ul>
+               </div>
+               <div class="response-description"> 
+               
+               </div>
            </div>
 
         </div>

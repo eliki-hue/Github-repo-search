@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SearchComponent } from './search/search.component';
 import { UserComponent } from './user/user.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { UserComponent } from './user/user.component';
     AppComponent,
     PortfolioComponent,
     SearchComponent,
-    UserComponent
+    UserComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

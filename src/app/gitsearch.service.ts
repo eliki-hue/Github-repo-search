@@ -10,7 +10,7 @@ export class GitsearchService {
   constructor(private http:HttpClient) { }
 
   getData(){
-    const url ="https://api.github.com/users/eliki-hue/repos?/description?per_page=100" 
+    const url ="https://api.github.com/users/jessicamwangi/repos?/description?per_page=100" 
 
     return this.http.get(url)
   }
