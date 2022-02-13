@@ -9,18 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
   
-  user!: string[];
-
+  
+user!: string[];
  
   
 
  
-  constructor(private gitsearchService:GitsearchService) {}
-    getUser(){
-      this.gitsearchService.getData().subscribe((data)=>{
-        console.log(data)
-      })
-    }
   
 
   ngOnInit(): void {

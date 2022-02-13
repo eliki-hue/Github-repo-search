@@ -1,1 +1,30 @@
-<p>user works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="checker-container">
+            <h1>Github Reporsitory checker</h1>
+            <div class="searchBy">
+                <h2>SEARCH BY:</h2>
+                <label for="username">User name</label>
+                <input type="radio" name="searchBy" class="radio" id="username"><br>
+                <label for="repository">Reporsitory</label>
+                <input type="radio" class="radio" name="searchBy" id="repository"><br>
+                <input type="text" name="inputted" id="inputted" placeholder="search..."><br>
+                <button type="submit" (click)="getUser()">submit</button>
+            </div>
+           <div class="respose-section" *ngFor="">
+               <div class="response-name"> response-name here</div>
+               <div class="response-description"> response-description here</div>
+           </div>
+
+        </div>
+    </div>
+</body>
+</html>
