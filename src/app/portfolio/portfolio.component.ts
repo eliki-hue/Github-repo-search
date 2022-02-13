@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
+  userInfo:string[]
 
+ getUser(){
+   
+ }
   constructor() { }
 
   ngOnInit(): void {

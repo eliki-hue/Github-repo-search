@@ -26,3 +26,7 @@ box-shadow: -5px 5px 10px 0px rgba(65, 42, 170, 0.75);
 span{
     color: blueviolet;
 }
+.info{
+    margin: 20px;
+    display:grid;
+}
