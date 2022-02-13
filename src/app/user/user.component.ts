@@ -9,14 +9,19 @@ import { GitsearchService } from './../gitsearch.service';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  @Input() user!: string[];
+  @Input() user: any=[];
 
   constructor(private gitsearchService:GitsearchService) {}
     getUser(){
       this.gitsearchService.getData().subscribe((data)=>{
-        console.log(data)
+        
+        this.user=data
+        console.log('this is users array from github')
+        console.log(this.user)
       })
     }
+    
+    
   
 
   
