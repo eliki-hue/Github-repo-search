@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SearchComponent } from './search/search.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioComponent,
-    SearchComponent
+    SearchComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
