@@ -9,5 +9,9 @@ export class GitsearchService {
 
   constructor(private http:HttpClient) { }
 
-  
+  getData(Observable: any){
+    const url ="https://api.github.com/users"
+
+    return this.http.get(url)
+  }
 }
