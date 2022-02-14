@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { GitsearchService } from './../gitsearch.service';
+import { NgForm } from '@angular/forms';
 
  
 

@@ -12,7 +12,7 @@
             <h1>Github Reporsitory checker</h1>
             <div class="searchBy">
                 <h2>SEARCH BY:</h2>
-                <form action="">
+                <form  (ngSubmit)="adding(quoteForm.value)" #quoteForm='ngForm'>
                     <label for="username">User name</label>
                     <input type="radio" name="searchBy" class="radio" id="username"><br>
                     <label for="repository">Reporsitory</label>
