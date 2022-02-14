@@ -12,12 +12,12 @@
             <h1>Github Reporsitory checker</h1>
             <div class="searchBy">
                 <h2>SEARCH BY:</h2>
-                <form (ngSubmit)="userInput()" #userForm='ngForm'>
+                <form (ngSubmit)="userInput(userForm.value)" #userForm='ngForm'>
                     <label for="username">User name</label>
                     <input type="radio" name="searchBy" class="radio" id="username"><br>
                     <label for="repository">Reporsitory</label>
                     <input type="radio" class="radio" name="searchBy" id="repository"><br>
-                    <input type="text" name="inputted" id="inputted" placeholder="search..."><br>
+                    <input type="text" name="inputted" id="inputted" (ngModel)='user.username' name="username" #username ='ngModel' required placeholder="search..."><br>
                     <button type="submit" (click)="getUser()">submit</button>
                 </form>
               

@@ -12,10 +12,16 @@ import { User } from '../user';
 })
 export class UserComponent implements OnInit {
 
- userInput(){}
+  username = new User('')
+ userInput(value: any){
+   const username = value.userName
+   alert(username)
+
+ }
+
 
   @Input() user: any=[];
-  newInfo =new Repository('','',new Date)
+  results =new Repository('','',new Date)
   
 
   constructor(private gitsearchService:GitsearchService) {}
@@ -29,11 +35,11 @@ export class UserComponent implements OnInit {
       })
     }
     searchFilter(data: any){
-      this.newInfo.repoName =data.name;
-      this.newInfo.description =data.description;
-      this.newInfo.dateCreated= data.updated_at;
+      this.results.repoName =data.name;
+      this.results.description =data.description;
+      this.results.dateCreated= data.updated_at;
       
-      this.user.push(this.newInfo)
+      this.user.push(this.results)
     }
     
     
