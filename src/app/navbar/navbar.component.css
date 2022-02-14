@@ -1,4 +1,19 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 .nav-item {
     color: blue;
+    display: flex;
+    font-weight: 400;
+    font-size: larger;
+    margin-left: 15px;
+    -webkit-box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 5px 16px 0px rgba(0,0,0,0.75);
+}
+button {
+    -webkit-box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 10px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 8px 10px 16px 0px rgba(0,0,0,0.75);
+}
+.navbar {
+    background-color:grey;
 }

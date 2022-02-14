@@ -14,10 +14,10 @@
                 <h2>SEARCH BY:</h2>
                 <form  (ngSubmit)="userInput(userForm.value)" #userForm='ngForm'>
                  <input type="text" name="username" (ngModel)="newUser.username" id="inputted" #quote="ngModel" placeholder="search..."><br>
-                <button type="submit" >submit</button>
+                <button class="submitButton" type="submit" >submit</button>
                 </form>
             </div>
-            <!-- <button type="submit" (click)="getUser()">view results</button> -->
+            
            <div class="respose-section" *ngFor="let record of received">
               
                <div class="response-name"> 
