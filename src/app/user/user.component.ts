@@ -1,8 +1,7 @@
+import { User } from './../user';
 import { Component, OnInit, Input } from '@angular/core';
 import { GitsearchService } from './../gitsearch.service';
-import { NgForm } from '@angular/forms';
-import { Repository } from '../repository';
-import { User } from '../user';
+
  
 
 @Component({
@@ -11,37 +10,30 @@ import { User } from '../user';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+  @Input() received:any=[]
+  user: User[]=[]
+  newUser= new User('')
+  username!: string;
 
-  username = new User('')
- userInput(value: any){
-   const username = value.userName
-   alert(username)
-
- }
-
-
-  @Input() user: any=[];
-  results =new Repository('','',new Date)
+  userInput(data: any){
+    const username = data.username;
+    alert(username)
+    this.updateUsername(username)
+  }
+  updateUsername(username: any){
+    this.gitsearchService.updateSearch(this.username)
+  }
   
 
   constructor(private gitsearchService:GitsearchService) {}
     getUser(){
       this.gitsearchService.getData().subscribe((data)=>{
         console.log(data)
-        this.user=data
+        this.received=data
         console.log('this is users array from github')
-        console.log(this.user)
-        this.searchFilter(data)
+        
       })
     }
-    searchFilter(data: any){
-      this.results.repoName =data.name;
-      this.results.description =data.description;
-      this.results.dateCreated= data.updated_at;
-      
-      this.user.push(this.results)
-    }
-    
     
   
 

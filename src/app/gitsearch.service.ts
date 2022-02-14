@@ -9,10 +9,14 @@ export class GitsearchService {
 
   constructor(private http:HttpClient) { }
 
-    
+   private searchName = 'jessicamwangi'
   getData(){
-    const url ="https://api.github.com/users/eliki-hue/repos?/description?per_page=100" 
+    let url ="https://api.github.com/users/"+this.searchName+"/repos"
+    alert(url)
 
     return this.http.get(url)
+  }
+  updateSearch(username:string){
+    this.searchName = username;
   }
 }
