@@ -22,7 +22,7 @@
               
                <div class="response-name"> 
                 <ul >
-                    <li><strong>{{record.name}}</strong>  --<span *ngIf="record.description">{{record.description}}</span> <span>The project was last updated on {{record.updated_at}}</span>
+                    <li><strong>{{record.name}}</strong>  --<span *ngIf="record.description">{{record.description}}</span> <br><span>The project was last updated on {{record.updated_at|date}}</span>
                    </li>
                </ul>
                </div>
