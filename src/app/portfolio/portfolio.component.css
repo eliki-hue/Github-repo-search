@@ -1,10 +1,31 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
-
+.container{
+    background-color: rgb(211, 240, 230);
+    margin-top: 20px;
+    
+}
 span{
     color: blueviolet;
 }
-.info{
-    margin: 20px;
-    display:grid;
+
+p{
+    font-size: large;
+}
+
+.image {
+    justify-items:right;
+    
+     margin-left: 20%; 
+    
+}
+.myRepo-section{
+    align-items: flex-start;
+    font-size: larger;
+    margin-left: -20%;
+}
+.introduction {
+    text-align: center;
+    margin-bottom: 5%;
+    font-size:x-large;
 }
