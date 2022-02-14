@@ -27,6 +27,7 @@
                 <div class="response-name"> 
                  <ul >
                      <li><strong>{{record.name}} </strong>  --<span *ngIf="record.description">{{record.description}}</span> <br><span>The project was last updated on {{record.updated_at|date|uppercase}}</span>
+                        <br> repository link: <a style="text-align: center" target="blank" href="{{record.html_url}} " >{{record.name}}</a>
                     </li>
                 </ul>
                 </div>
