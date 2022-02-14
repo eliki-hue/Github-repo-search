@@ -6,7 +6,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GitsearchService {
-  
 
   constructor(private http:HttpClient) { }
 
