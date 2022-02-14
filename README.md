@@ -2,6 +2,7 @@
 # GithubRepoSearch
 
 The project is about creating a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories.
+https://eliki-hue.github.io/Github-repo-search/
 
 # Author : 
 Elijah Kiragu
