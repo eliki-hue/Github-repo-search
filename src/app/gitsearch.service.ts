@@ -7,16 +7,21 @@ import { Observable } from 'rxjs';
 })
 export class GitsearchService {
 
+
   constructor(private http:HttpClient) { }
 
-   private searchName = 'jessicamwangi'
+   private searchName = ''
+   updateSearch(username:string){
+    this.searchName = username;
+    
+    this.getData()
+  }
+  
   getData(){
     let url ="https://api.github.com/users/"+this.searchName+"/repos"
-    alert(url)
+    
 
     return this.http.get(url)
   }
-  updateSearch(username:string){
-    this.searchName = username;
-  }
+  
 }

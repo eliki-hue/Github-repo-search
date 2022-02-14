@@ -15,13 +15,14 @@
                 <form  (ngSubmit)="userInput(userForm.value)" #userForm='ngForm'>
                  <input type="text" name="username" (ngModel)="newUser.username" id="inputted" #quote="ngModel" placeholder="search..."><br>
                 <button type="submit" >submit</button>
-            </form>
+                </form>
             </div>
+            <!-- <button type="submit" (click)="getUser()">view results</button> -->
            <div class="respose-section" *ngFor="let record of received">
               
                <div class="response-name"> 
                 <ul >
-                    <li><strong>{{record.name}}</strong>  --<span >{{record.description}}</span>
+                    <li><strong>{{record.name}}</strong>  --<span *ngIf="record.description">{{record.description}}</span> <span>The project was last updated on {{record.updated_at}}</span>
                    </li>
                </ul>
                </div>
